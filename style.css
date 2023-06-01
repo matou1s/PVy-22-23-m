@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Roboto+Slab&family=Tilt+Neon&family=Varela+Round&display=swap');
+
+* {box-sizing: border-box;}
+
+:root {
+  --color-black: rgb(0, 0, 0);
+  --color-green: rgb(26, 225, 0);
+  --color-lime: rgb(26, 255, 0);
+}
+
+.modra {
+  background-color: var(--color-black);
+}
+
+h1 {
+  color: var(--color-black);
+}
+
+h2,
+h3,
+h4,
+nav {
+  color: var(--color-black);
+}
+
+h3 {
+  color: var(--color-lime);
+}
+
+h4 {
+  color: var(--color-lime);
+}
+
+p {
+  color: var(--color-black);
+}
+
+li > a {
+  color: var(--color-lime);
+}
+
+li > a:hover {
+  color: rgb(255, 149, 0);
+}
+
+.navbar {
+  background-color: var(--color-green);
+}
+
+input[type=text]:focus {
+  background-color: rgb(0, 230, 12);
+}
+
+input[type=submit] {
+  background-color: rgb(21, 18, 18);
+  color: var(--color-lime);
+}
+
+input[type=submit]:hover {
+  background-color: rgb(23, 0, 230);
+  color: rgb(21, 18, 18);
+}
+
+:root {
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h3: 2rem;
+  --font-size-h4: 1.5rem;
+  --font-size-p: 1rem;
+}
+
+h1 {
+  text-align: center; 
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+p {
+  font-size: var(--font-size-p);
+}
+
+body 
+{
+  padding: 0;
+  margin: 0;
+  font-family: 'Comfortaa' 
+}
+
+h2, h3, h4, nav
+{ 
+  font-family: 'Roboto Slab', serif, 'Tilt Neon', cursive;
+}
+
+main
+{ 
+  width: 1500px;
+  text-align: center;
+}
+
+li
+{
+  display: inline-block;
+  padding-left: 10px;
+}
+
+li > a 
+{
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(26, 225, 0);
+}
+
+li > a:hover
+{
+  color: rgb(255, 149, 0);
+  text-decoration:none;
+  font-size: 200%;
+}
+
+ul
+{
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar 
+{
+  position: sticky;
+  top: 0;
+  background-color: rgb(26, 225, 0);
+  padding: 10px;
+  box-shadow: 0px 2px 10px rgba(26, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+header 
+{
+  height: 200px;
+  width: 100%;
+}
+
+.change-color 
+{
+  animation-name: changeColor;
+  animation-duration: 50s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes changeColor 
+{
+  from { color: rgb(0, 0, 0); }
+  to { color: rgb(26, 225, 0); }
+}
+
+.animate__animated 
+{
+  animation-duration: 15s;
+  animation-fill-mode: both;
+}
+.animate__fadeIn 
+{
+  animation-name: fadeIn;
+}
+@keyframes fadeIn 
+{
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes rotate 
+{
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.rotate-image 
+{
+  animation: rotate 10s linear infinite;
+}
+
+section
+{
+  display: flex;
+}
+
+div
+{
+  flex: 0 1 1200px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo 
+{
+  padding: 6px;
+}
+
+nav 
+{
+padding: 6px;
+}
+
+.menu {
+  background-color: white;
+  padding: 6px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.menu-polozky {
+  list-style-type: none;
+}
+
+main {
+  padding: 6px;
+}
+
+.skryte
+ {
+  display: none;
+}
+
+@media only screen and(min-width: 500px) {  
+  .nav
+  {
+      display: flex;
+      justify-content: space-between;
+  }
+
+.menu {
+  display: none;
+}
+
+.nav-links {
+display: block;
+margin: 0;
+padding: 6px;
+}
+
+.nav-links { 
+padding-left: 12px;
+display: inline-block;
+} 
+}
+
+
+  .galerie {
+    display: flex;
+    gap: 10px;
+  }
+
+  .obrazek {
+    flex: 0 1 100px;
+    height: 150px;
+    background-size:auto;
+    background-position: left;
+  }
+
+  #k1 {
+    background-image: url(./80400-creeper-green-coloring-minecraft-book-png-free-photo.png);
+  }
+
+  #k2 {
+    background-image: url(./steve.png);
+  }
+
+  #k3 {
+    background-image: url(./pngimg.com\ -\ minecraft_PNG22.png);
+  }
+
+  #k4 {
+    background-image: url(./diamond.png);
+  }
+
+  form {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  input {
+    font-size: 15px;
+    border: 4px solid rgb(0, 230, 50) ;
+    padding: 6px;
+  }
+
+  input[type=text] {
+    flex: 0 1 100%;
+    color: black;
+    border-radius: 12px 0 0 12px;
+  }
+
+  input[type=text]:focus {
+    background-color: rgb(0, 230, 12);
+    outline: none;
+  }
+
+  input[type=submit] {
+  flex: 0 0 80px;
+  background-color: rgb(21, 18, 18);
+  color: rgb(15, 0, 230);
+  border-radius: 0 12px 12px 0;
+  }
+
+  input[type=submit]:hover{
+    flex: 0 0 80px;
+    background-color: rgb(23, 0, 230);
+    color: rgb(21, 18, 18);
+    border-radius: 0 12px 12px 0;
+  }
+
+  input[type=checkbox]{
+    margin: auto;
+    font-size: 25px;
+  }
+
+  .osobniudaje{
+    margin: 550px;
+  }
+
+  .galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .galerie img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .galerie {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+
+  .popup-overlay {
+    background-color: rgba(52, 52, 52, 0.52);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .popup-window {
+    width: 400px;
+    height: 400px;
+    padding: 1rem;
+    position: absolute;
+    left: calc((100vw - 400px)/2);
+    top: calc((100vh - 400px)/2);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%); 
+    border-radius: 12px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.72);
+  }
+  
+  .star {
+    fill: orange;
+    stroke: aliceblue;
+    stroke-width: 4px;
+  } 
+  
+  
